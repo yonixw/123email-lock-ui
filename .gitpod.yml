@@ -5,5 +5,7 @@
 tasks:
   - init: yarn install && yarn run build
     command: yarn run start
+  - name: storybook
+    command: yarn storybook
 
 

@@ -1,2 +1,4 @@
 yarn create react-app . --template typescript
 yarn add typescript @types/node @types/react @types/react-dom @types/jest
+// Optional yarn add styled-components @types/styled-components styled-normalize
+npx sb init
