@@ -1,8 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 
-function App() {
+import logo from "./logo.svg";
+import "./App.css";
+
+function InnerApp() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +22,15 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+function App() {
+  // 2. Wrap ChakraProvider at the root of your app
+  return (
+    <ChakraProvider>
+      <InnerApp />
+    </ChakraProvider>
   );
 }
 
