@@ -8,7 +8,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
-    "storybook-color-picker"
+    "storybook-color-picker",
+    '@chakra-ui/storybook-addon'
   ],
   "framework": "@storybook/react",
   "core": {
