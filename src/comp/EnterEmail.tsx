@@ -38,7 +38,7 @@ export function EnterEmail() {
 
   return (
     /*  <Flex bg="gray.100" align="center" justify="center" h="100vh"> */
-    <Box bg={"primary"} p={6} rounded="md">
+    <Box bg={"aaa"} p={6} rounded="md">
       <form onSubmit={formSubmit}>
         <VStack spacing={4} align="flex-start">
           <FormControl>

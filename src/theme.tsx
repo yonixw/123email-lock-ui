@@ -2,6 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 
 export const UltraTheme = extendTheme({
   colors: {
+    aaa: "#f0f",
     primary: {
       main: "#7bb9e8",
       50: "#e3f2fd",
