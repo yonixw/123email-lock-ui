@@ -27,7 +27,6 @@ Primary.args = {
 
 export const Ultra = Template.bind({});
 Ultra.args = {
-  chakra: { theme: UltraTheme },
   primary: true,
   label: "Button",
 };
