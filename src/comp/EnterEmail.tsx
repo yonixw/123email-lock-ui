@@ -9,12 +9,15 @@ import {
   FormLabel,
   Input,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export function EnterEmail() {
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
   const [remember, setRemember] = React.useState(false);
+
+  const bg_color = useColorModeValue("red.500", "red.200");
 
   const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
@@ -33,7 +36,7 @@ export function EnterEmail() {
 
   return (
     /*  <Flex bg="gray.100" align="center" justify="center" h="100vh"> */
-    <Box bg="white" p={6} rounded="md">
+    <Box bg={bg_color} p={6} rounded="md">
       <form onSubmit={formSubmit}>
         <VStack spacing={4} align="flex-start">
           <FormControl>
