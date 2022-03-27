@@ -18,7 +18,6 @@ export function EnterEmail() {
   const [remember, setRemember] = React.useState(false);
 
   //https://chakra-ui.com/docs/styled-system/theming/theme
-  //https://github.com/chakra-ui/chakra-ui/discussions/5093
   //const bg_color = useColorModeValue("primary", "black.200"); // useColorModeValue("white.500", "black.200");
 
   const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
