@@ -1,6 +1,6 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-
+import { UltraTheme } from "./theme";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -28,7 +28,7 @@ function InnerApp() {
 function App() {
   // 2. Wrap ChakraProvider at the root of your app
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={UltraTheme}>
       <InnerApp />
     </ChakraProvider>
   );
