@@ -3,9 +3,14 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: yarn install && yarn run build
-    command: yarn run start
+  - name: install
+    command: |
+      yarn install && yarn run build
+      gp sync-done install-yarn
+      yarn run start
   - name: storybook
-    command: yarn storybook
+    command: |
+      gp sync-await install-yarn
+      yarn storybook
 
 
