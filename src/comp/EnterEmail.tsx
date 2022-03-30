@@ -11,6 +11,7 @@ import {
   VStack,
   useColorModeValue,
   Center,
+  Heading,
 } from "@chakra-ui/react";
 
 export function EnterEmail() {
@@ -51,13 +52,10 @@ export function EnterEmail() {
             </Button>
           </VStack>
         </form>
-        <Center
-          style={{ width: "100%" }}
-          fontSize="md"
-          fontWeight="medium"
-          color="gray.800"
-        >
-          Or
+        <Center style={{ width: "100%" }}>
+          <Heading as="h3" size="lg">
+            ⧟ OR ⧟{" "}
+          </Heading>
         </Center>
         <Button colorScheme="brand" isFullWidth>
           Generate New
