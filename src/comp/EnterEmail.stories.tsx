@@ -24,9 +24,3 @@ Primary.args = {
   primary: true,
   label: "Default",
 };
-
-export const Ultra = Template.bind({});
-Ultra.args = {
-  primary: true,
-  label: "Button",
-};

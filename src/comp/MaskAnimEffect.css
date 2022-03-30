@@ -1,0 +1,15 @@
+.roll {
+  animation: roll_loop 40s infinite linear forwards;
+}
+
+@keyframes roll_loop {
+  0%,
+  50%,
+  100% {
+    margin-top: 0;
+  }
+  25%,
+  75% {
+    margin-top: -3600%;
+  }
+}
