@@ -8,13 +8,7 @@ export default {
   component: MaskAnimeEffect,
 } as ComponentMeta<typeof MaskAnimeEffect>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof MaskAnimeEffect> = (args: any) => (
-  <MaskAnimeEffect {...args} />
-); // {...args}
-
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Primary = () => <MaskAnimeEffect />;
 
 export const Multiple = () => (
   <>
